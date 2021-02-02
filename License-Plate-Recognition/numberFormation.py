@@ -5,7 +5,6 @@ Created on Mon Feb  1 11:58:29 2021
 @author: Shaunak_Sensarma
 """
 
-
 import preprocess
 import plotting
 import matplotlib.pyplot as plt
@@ -14,14 +13,22 @@ import os
 import sys
 import database
 
+#LOADING THE TRAINED .SAV FILE
+
 model_pat=os.path.dirname(os.path.realpath(__file__))+"/model.sav"
 model= pickle.load(open(model_pat,"rb"))
 
-env=preprocess.Preprocess("test_image/car.jpg")
+
+#LOADING THE PRE-PROCESS FILE WHICH HAS THE CHARACTERES SEGMENTED...
+
+env=preprocess.Preprocess("test_image/car5.jpg")
 env.plate_detection()
 segmented_characters=env.character_segmentation()
 plotting.show()
 segmented_characters.sort()
+
+
+#STORING THE SEGMENTED CHARACTERS IN AN ARRAY
 
 ans=[]
 for char in segmented_characters:
