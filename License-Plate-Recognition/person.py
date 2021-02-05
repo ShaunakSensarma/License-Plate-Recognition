@@ -17,6 +17,7 @@ class Person:
         self.first = first
         self.last = last
         self.pay = pay
+        print(last)
 
     #Email of person.
 

@@ -29,7 +29,8 @@ c.execute("""CREATE TABLE employees (
 def insert_per(emp):
     with conn:
         c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first, 'last': emp.last, 'pay': emp.pay})
-
+        records = c.fetchall()
+        print("Total rows are:  ", len(records))
 #GETTING NAMES
 
 def get_per_by_name(lastname):
