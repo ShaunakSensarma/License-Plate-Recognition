@@ -65,3 +65,34 @@ print(license_plate)
 if(license_plate==""):
     print("Cannot detect a valid license plate")
     sys.exit()
+
+emps = database.get_per_by_name(license_plate)
+if(len(emps)==0):
+    print("Employee not in database")
+    sys.exit()
+
+stack_car = ["1", "2", "3"] 
+stack_car.append("4") 
+stack_car.append("5")
+stack_bike=["11","12","13","14","15"] 
+stack_truck=["6","7","8","9","10"]
+if (emps[0][0]=="Car"):
+    print("Parking lot:") 
+    print(stack_car.pop()) 
+    print("Type of vehicle:")
+    print(emps[0][0])
+    print("Price for vehicle:")
+    print(emps[0][2])
+elif(emps[0][0]=="Bike"):
+    print("Parking lot:") 
+    print(stack_bike.pop()) 
+    print("Type of vehicle:")
+    print(emps[0][0])
+    print("Price for vehicle:")
+    print(emps[0][2])
+elif(emps[0][0]=="Truck"):
+    print("Parking lot:") 
+    print(stack_truck.pop()) 
+    print("Type of vehicle:")
+    print(emps[0][0])
+    print("Price for vehicle:")

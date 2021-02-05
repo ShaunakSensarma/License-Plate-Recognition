@@ -53,6 +53,7 @@ def remove_per(emp):
 
 emp_1 = Person('Car', 'HR26DK8337', 50)
 emp_2 = Person('Car', 'MH12DE1433', 100)
+emp_3 = Person('Car', 'MH20EE7598', 200)
 
 #INSERTION BY VALUE.
 
