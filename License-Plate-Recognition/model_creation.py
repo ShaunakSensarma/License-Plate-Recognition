@@ -45,11 +45,7 @@ def read_training_data(training_directory):
 
 #Performing Cross Validation for dividing data subsets
 
-def cross_validation(model, num_of_fold, train_data, train_label):
-   
-    accuracy_result = cross_val_score(model, train_data, train_label, cv=num_of_fold)   #Calculating accuracy score of cross validation technique.
-    print("Cross Validation Result for ", str(num_of_fold), " -folds")
-    print(accuracy_result * 100)
+
 
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
