@@ -30,10 +30,7 @@ segmented_characters.sort()
 
 #STORING THE SEGMENTED CHARACTERS IN AN ARRAY
 
-ans=[]
-for char in segmented_characters:
-    #print(plt.imshow(char[1]))
-    ans.append(model.predict(char[1].reshape(1,-1)))
+
 
 
 license_plate= []
