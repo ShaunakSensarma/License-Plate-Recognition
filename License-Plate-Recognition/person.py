@@ -21,9 +21,7 @@ class Person:
 
     #Email of person.
 
-    @property
-    def email(self):
-        return '{}.{}@email.com'.format(self.first, self.last)
+    
 
     #CREATING FULL NAME FROM FIRST NAME AND LAST NAME.
     
