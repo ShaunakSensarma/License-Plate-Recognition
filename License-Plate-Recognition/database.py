@@ -7,8 +7,11 @@ Created on Fri Jan 29 23:32:27 2021
 
 #CREATING DATABASE to store individual names and their payable amount
 
-#writing queries for inserting, getting person by name, updating payable amount
-#and removing person from the database.
+#Writing queries for:
+#  inserting
+#  getting person by name
+#  updating payable amount
+#  removing person from the database.
 
 import sqlite3
 from person import Person
