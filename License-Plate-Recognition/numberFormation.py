@@ -62,7 +62,7 @@ print("Recognized License Plate is:")
 print(license_plate)
 
 
-if(license_plate==""):
+if not(license_plate):
     print("Cannot detect a valid license plate")
     sys.exit()
 
