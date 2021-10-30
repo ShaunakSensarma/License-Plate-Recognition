@@ -6,11 +6,10 @@ Created on Fri Jan 29 10:32:20 2021
 """
 
 
-import os
+import os,joblib
 import numpy as np
 from sklearn.svm import SVC                                     #for Support Vector Classifier. 
 from sklearn.model_selection import cross_val_score             #cross validation for seperating data into train and validation sets.
-import joblib
 from skimage.io import imread
 from skimage.filters import threshold_otsu
 
