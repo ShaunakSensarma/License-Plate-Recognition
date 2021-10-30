@@ -27,12 +27,12 @@ class Preprocess():
         
         
 #LICENSE PLATE DETECTION
-    #  heuristics for license plate dimensions
-    # height of plate is within [5-20]% of image height and width within [15-60]% of image_width
-    # region area >50
-    # plate height more than 20% plate_width
-    # sum of pixels in plate greater than 60 % of total pixels
-    # only 10 cc in actual plate
+    # Heuristics for license plate dimensions
+    # Height of plate is within [5-20]% of image height and width within [15-60]% of image_width
+    # Region area >50
+    # Plate height > 0.20*plate_width
+    # Sum of pixels in plate greater than 60 % of total pixels
+    # Only 10 cc in actual plate
     
 
 
