@@ -9,9 +9,7 @@ import preprocess
 import plotting
 import matplotlib.pyplot as plt
 import pickle
-import os
-import sys
-import database
+import os,sys,database
 
 #LOADING THE TRAINED .SAV FILE
 
