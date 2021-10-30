@@ -6,12 +6,12 @@ Created on Fri Jan 29 23:12:28 2021
 """
 
 #Class for person name (first name and last name) and amount payable for parking.
-#class is called from database code to maintain record of persons.
+#Class is called from database code to maintain record of persons.
 
 class Person:
     """A sample person class"""
 
-    #initialising name and payable amount
+    #Initialising name and payable amount
     
     def __init__(self, first, last, pay):
         self.first = first
