@@ -67,7 +67,7 @@ if(license_plate==""):
     sys.exit()
 
 emps = database.get_per_by_name(license_plate)
-if(len(emps)==0):
+if not(emps):
     print("Employee not in database")
     sys.exit()
 
